@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Coffe landing</title>
+        <meta charset="utf-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+            body {
+                background-image: url("img/coffe-blackground.jpeg");
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-size: cover;
+            }   
+            main {
+                font-family: Verdana;
+                float: right;
+                margin: 5%;
+                width: 30%;
+            } 
+            h1 { font-family: 'Edu TAS Beginner', cursive; font-size: 36px; }
+            
+            h2, h3, h4 { font-size: 14px; }
+
+            p { font-size: 12px; }
+
+            label { font-size: 10px; }
+
+            input, select, button textarea {
+                margin-top: 1px; 
+                margin-bottom: 10px; 
+                padding: 10px;
+                width: 100%;
+             }
+            input [type='checkbox'] { width: 15px; float: left; }
+            button { 
+                background-color:#b3856e;
+                border-radius: 3px;
+                cursor: pointer;
+                color: #502615;
+                border: solid 1px #502615;
+            }
+            button:hover { background-color: #502615; color:#b3856e; }
+        </style>  
+    </head>
+    <body>
+        <main>
+            <h1>Coffe landing</h1>
+            <h2><i>Felicidade tem gosto de café e cheirinho de manhã</i></h2>
+            <h3><strong>A vida só começa depois do café</strong></h3>
+            <h4><i>Um café com um amigo é a melhor terapia que existe</i></h4>
+            <p>Café é uma poesia líquida que toca o nosso corpo e ilumina os nossos pensamentos.</p>
+            <p>Um bom café tem o poder de aquecer a nossa alma e despertar o nosso coração.</p>
+            <form name="cofffe-order">
+                <label for="qtd">Qual é o teu nome?</label>
+                <input type="text" placeholder="Teu nome" name="name"/>
+                <label for="qtd">Qual método de café tu queres?</label>
+                <select name="coffe-type">
+                    <option>:: Selecione o método ::</option>
+                    <option>Prensa francesa</option>
+                    <option>Capuccino</option>
+                    <option>Drip Coffee</option>
+                    <option>Ristretto</option>
+                    <option>Hario V60</option>
+                    <option>Affogato</option>
+                    <option>Macchiato</option>
+                    <option>Americano</option>
+                    <option>Moka</option>
+                    <option>Expresso</option>
+                    <option>Espresso Descafeinado</option>
+                    <option>Latte</option>
+                    <option>Chemex</option>
+                </select>
+                <label for="qtd">Quantas xícaras?</label>
+                <input type="number" name="qtd" min="1" value="1" id="qtd"/>
+                <input type="checkbox"/><label>Complemento?</label>
+                <select name="coffe-complement">
+                    <option>:: Selecione o complemento ::</option>
+                    <option>Cheesecake de chocolate</option>
+                    <option>Cheesecake de framboesa</option>
+                    <option>Mousse de banana e abacaxi</option>
+                    <option>Mousse de chocolate</option>
+                    <option>Mousse de morango</option>
+                    <option>Mousse de maracujá</option>
+                    <option>Torta de maçã</option>
+                    <option>Torta de limão</option>
+                </select>
+                <input type="checkbox" disabled/><label>Enviar açúcar?</label>
+                <textarea placeholder="Observações?"></textarea>
+                <button>Confirmar o pedido</button>
+            </form>
+        </main>
+    </body>
+</html>
